@@ -113,7 +113,7 @@
 <meta property="og:image" content="http://huanglcat.github.io/imgs/hexoinit.png">
 <meta property="og:image" content="http://huanglcat.github.io/imgs/ssh.png">
 <meta property="og:image" content="http://huanglcat.github.io/imgs/index.png">
-<meta property="og:updated_time" content="2018-03-24T16:58:15.570Z">
+<meta property="og:updated_time" content="2018-03-24T17:05:13.160Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="记Github+hexo搭建个人博客">
 <meta name="twitter:description" content="2018年初，想要重新建博客，于是用Github+hexo搭建了本博客。使用hexo本地搭建页面，再push到Github仓库。本文记录了使用Github+hexo搭建个人博客的过程及遇到的问题。">
@@ -421,6 +421,10 @@
 <p>当重新编辑页面时，在本地调试<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ hexo g <span class="comment">#当修改配置时，需要执行这一步</span></span><br><span class="line">$ hexo s --debug</span><br></pre></td></tr></table></figure></p>
 <p>推送上Github命令<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo d <span class="comment"># hexo deploy</span></span><br></pre></td></tr></table></figure></p>
 <p>清除缓存<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo clean</span><br></pre></td></tr></table></figure></p>
+<p>增加图片</p>
+<p>需要在文章中增加图片，有几种方式：</p>
+<p>图片存在根目录source下的imgs目录，也可使用外链</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&lt;img src=&quot;/imgs/index.png&quot; width = &quot;800&quot; height = &quot;200&quot; alt=&quot;图片名称&quot; align=center /&gt; </span><br><span class="line">![“图片描述”](/imgs/你的图片名字.JPG)</span><br></pre></td></tr></table></figure>
 <p>hexo详细命令查看: <a href="https://hexo.io/docs.html" target="_blank" rel="noopener">hexo api</a></p>
 <h2 id="准备Github"><a href="#准备Github" class="headerlink" title="准备Github"></a>准备Github</h2><h3 id="准备repository"><a href="#准备repository" class="headerlink" title="准备repository"></a>准备repository</h3><p>新建的repository名字要与账号对应，格式：huanglcat.github.io</p>
 <h3 id="设置SSH"><a href="#设置SSH" class="headerlink" title="设置SSH"></a>设置SSH</h3><p>这时需要将Github连接本地，设置SSH。设置SSH有多种方法，我使用了git命令来生成秘钥：</p>
@@ -448,10 +452,9 @@
 <h5 id="首页折叠"><a href="#首页折叠" class="headerlink" title="首页折叠"></a>首页折叠</h5><p>此时，博客首页的文章是全部显示的，需要将文章进行折叠，在文章需要折叠的内容之前增加代码</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;!--more--&gt;</span><br></pre></td></tr></table></figure>
 <p>此时首页文章已经折叠了：<br><img src="/imgs/index.png" width="800" height="200" alt="图片名称" align="center"></p>
-<h2 id="修改文章"><a href="#修改文章" class="headerlink" title="修改文章"></a>修改文章</h2><h3 id="增加图片"><a href="#增加图片" class="headerlink" title="增加图片"></a>增加图片</h3><p>需要在文章中增加图片，有几种方式：</p>
-<h5 id="增加html节点"><a href="#增加html节点" class="headerlink" title="增加html节点"></a>增加html节点</h5><p>图片存在根目录source下的imgs目录，也可使用外链<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;img src=&quot;/imgs/index.png&quot; width = &quot;800&quot; height = &quot;200&quot; alt=&quot;图片名称&quot; align=center /&gt;</span><br></pre></td></tr></table></figure></p>
-<h5 id="使用MarkDown语法"><a href="#使用MarkDown语法" class="headerlink" title="使用MarkDown语法"></a>使用MarkDown语法</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">![“图片描述”](/imgs/你的图片名字.JPG)</span><br></pre></td></tr></table></figure>
-<h2 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h2><ul>
+<h5 id="首页折叠-1"><a href="#首页折叠-1" class="headerlink" title="首页折叠"></a>首页折叠</h5><p>此时，博客首页的文章是全部显示的，需要将文章进行折叠，在文章需要折叠的内容之前增加代码</p>
+<p>参考：</p>
+<ul>
 <li>hexo使用：<a href="https://hexo.io/" target="_blank" rel="noopener">https://hexo.io/</a></li>
 <li>设置SSH：<a href="http://www.xuanfengge.com/using-ssh-key-link-github-photo-tour.html" target="_blank" rel="noopener">http://www.xuanfengge.com/using-ssh-key-link-github-photo-tour.html</a></li>
 <li>MarkDown使用：<a href="https://www.appinn.com/markdown/" target="_blank" rel="noopener">https://www.appinn.com/markdown/</a></li>
@@ -494,15 +497,15 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
+              <a href="/2018/03/24/first-page/" rel="next" title="first page">
+                <i class="fa fa-chevron-left"></i> first page
+              </a>
+            
           </div>
 
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2018/03/24/first-page/" rel="prev" title="first page">
-                first page <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -635,7 +638,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#环境"><span class="nav-number">1.</span> <span class="nav-text">环境</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#准备hexo"><span class="nav-number">2.</span> <span class="nav-text">准备hexo</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#安装hexo"><span class="nav-number">2.1.</span> <span class="nav-text">安装hexo</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#初始化hexo"><span class="nav-number">2.2.</span> <span class="nav-text">初始化hexo</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#使用hexo"><span class="nav-number">2.3.</span> <span class="nav-text">使用hexo</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#准备Github"><span class="nav-number">3.</span> <span class="nav-text">准备Github</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#准备repository"><span class="nav-number">3.1.</span> <span class="nav-text">准备repository</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#设置SSH"><span class="nav-number">3.2.</span> <span class="nav-text">设置SSH</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#配置Github"><span class="nav-number">3.3.</span> <span class="nav-text">配置Github</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#修改配置"><span class="nav-number">4.</span> <span class="nav-text">修改配置</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#修改hexo配置"><span class="nav-number">4.1.</span> <span class="nav-text">修改hexo配置</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#push到Github"><span class="nav-number">4.2.</span> <span class="nav-text">push到Github</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#修改主题"><span class="nav-number">4.3.</span> <span class="nav-text">修改主题</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#更换主题"><span class="nav-number">4.3.0.1.</span> <span class="nav-text">更换主题</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#修改目录"><span class="nav-number">4.3.0.2.</span> <span class="nav-text">修改目录</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#增加头像"><span class="nav-number">4.3.0.3.</span> <span class="nav-text">增加头像</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#首页折叠"><span class="nav-number">4.3.0.4.</span> <span class="nav-text">首页折叠</span></a></li></ol></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#修改文章"><span class="nav-number">5.</span> <span class="nav-text">修改文章</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#增加图片"><span class="nav-number">5.1.</span> <span class="nav-text">增加图片</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#增加html节点"><span class="nav-number">5.1.0.1.</span> <span class="nav-text">增加html节点</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#使用MarkDown语法"><span class="nav-number">5.1.0.2.</span> <span class="nav-text">使用MarkDown语法</span></a></li></ol></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#参考"><span class="nav-number">6.</span> <span class="nav-text">参考</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#环境"><span class="nav-number">1.</span> <span class="nav-text">环境</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#准备hexo"><span class="nav-number">2.</span> <span class="nav-text">准备hexo</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#安装hexo"><span class="nav-number">2.1.</span> <span class="nav-text">安装hexo</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#初始化hexo"><span class="nav-number">2.2.</span> <span class="nav-text">初始化hexo</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#使用hexo"><span class="nav-number">2.3.</span> <span class="nav-text">使用hexo</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#准备Github"><span class="nav-number">3.</span> <span class="nav-text">准备Github</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#准备repository"><span class="nav-number">3.1.</span> <span class="nav-text">准备repository</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#设置SSH"><span class="nav-number">3.2.</span> <span class="nav-text">设置SSH</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#配置Github"><span class="nav-number">3.3.</span> <span class="nav-text">配置Github</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#修改配置"><span class="nav-number">4.</span> <span class="nav-text">修改配置</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#修改hexo配置"><span class="nav-number">4.1.</span> <span class="nav-text">修改hexo配置</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#push到Github"><span class="nav-number">4.2.</span> <span class="nav-text">push到Github</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#修改主题"><span class="nav-number">4.3.</span> <span class="nav-text">修改主题</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#更换主题"><span class="nav-number">4.3.0.1.</span> <span class="nav-text">更换主题</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#修改目录"><span class="nav-number">4.3.0.2.</span> <span class="nav-text">修改目录</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#增加头像"><span class="nav-number">4.3.0.3.</span> <span class="nav-text">增加头像</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#首页折叠"><span class="nav-number">4.3.0.4.</span> <span class="nav-text">首页折叠</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#首页折叠-1"><span class="nav-number">4.3.0.5.</span> <span class="nav-text">首页折叠</span></a></li></ol></li></ol></li></ol></li></ol></div>
             
 
           </div>
