@@ -105,18 +105,23 @@ hexo详细命令查看: [hexo api](https://hexo.io/docs.html)
 
 ### 设置SSH
 
-这时需要将Github连接本地，设置SSH。设置SSH有多种方法，我使用了git命令来生成秘钥，依次输入命令：
+这时需要将Github连接本地，设置SSH。设置SSH有多种方法，我使用了git命令来生成秘钥，首先在本地创建SSH KEYS（邮箱为github注册邮箱，之后要去确认路径和输入密码，一路回车就可以）：
+
 ``` bash
 $ ssh-keygen -t rsa -C "email@xx.com"
-$ clip < ~/.ssh/id_sda.pub
-$ ssh -T git@github.com
 ```
-出现“you`re successfully authenticated”即设置成功，设置的SSH可以在c盘中的用户目录中找到
 
-### 配置Github
+成功的话会在 ~/下生成 .ssh文件夹，进去(设置的SSH可以在c盘中的用户目录中找到)，打开 id_rsa.pub，复制里面的key粘贴到setting中的key输入框中。
+输入 `eval "$(ssh-agent -s)"` ，添加密钥到ssh-agent，再输入 ssh-add ~/.ssh/id_rsa ，添加生成的SSH key到ssh-agent
 
-在github中找到setting，选择SSH and GpG keys
-找到本地的SSH粘贴到key输入框，点击添加
+``` bash
+$ eval "$(ssh-agent -s)"
+$ ssh-add ~/.ssh/id_rsa
+$ clip < ~/.ssh/id_rsa.pub
+$ ssh -T git@github.com//测试下公钥有没有添加成功
+```
+
+出现“you`re successfully authenticated”即设置成功
 
 ## 修改配置
 
@@ -129,12 +134,12 @@ $ ssh -T git@github.com
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: 黄蕾的博客  # title
+title: Emma的博客  # title
 subtitle:
 description: 桌上有刀，桌下有猫 #网站描述
 keywords:
-author: 黄蕾 
-language: zh-CN  #语言
+author: Emma 
+language: zh-Hans
 timezone:
 
 # URL

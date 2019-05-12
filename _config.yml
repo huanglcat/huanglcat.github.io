@@ -3,12 +3,12 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: 黄蕾的博客
+title: Emma的博客
 subtitle:
 description: 桌上有刀，桌下有猫
 keywords:
-author: 黄蕾
-language: zh-CN
+author: Emma
+language: zh-Hans
 timezone:
 
 # URL
@@ -81,3 +81,10 @@ deploy:
   type: git
   repo: git@github.com:huanglcat/huanglcat.github.io.git
   branch: master
+
+
+search:
+  path: search.xml
+  field: post
+  format: html
+  limit: 10000
