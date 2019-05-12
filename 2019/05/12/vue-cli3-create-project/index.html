@@ -75,7 +75,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="Vue," />
 
 
 
@@ -86,16 +86,43 @@
 
 
 
-<meta name="description" content="桌上有刀，桌下有猫">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Emma的博客">
-<meta property="og:url" content="http://huanglcat.github.io/archives/2018/03/index.html">
+<meta name="description" content="Vue CLI 是一个基于 Vue.js 进行快速开发的完整系统。下面记录了如何使用Vue CLI 3从零快速创建vue项目原型框架。">
+<meta name="keywords" content="Vue">
+<meta property="og:type" content="article">
+<meta property="og:title" content="vue-cli 3.0从零快速创建vue项目原型框架">
+<meta property="og:url" content="http://huanglcat.github.io/2019/05/12/vue-cli3-create-project/index.html">
 <meta property="og:site_name" content="Emma的博客">
-<meta property="og:description" content="桌上有刀，桌下有猫">
+<meta property="og:description" content="Vue CLI 是一个基于 Vue.js 进行快速开发的完整系统。下面记录了如何使用Vue CLI 3从零快速创建vue项目原型框架。">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/15009210-cb16859221a4e3dc.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/15009210-87c9281e0548fd62.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/15009210-cb9d683ff7f18243.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/15009210-b2700d9775048458.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/15009210-5fa76d266acc22d5.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/15009210-b56dc99fde4716aa.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/15009210-15095dcd996cc3f0.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/15009210-49b7fe9efb93b6b3.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/15009210-f37d177eb8857961.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/15009210-b5cc46b86f1fb9ca.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/15009210-3f5b2d47c835798b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/15009210-59a0ebd1a738cfce.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/15009210-83a68b703f2e47df.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/15009210-fb3a94bf22649ff4.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/15009210-2b1281d6b5207aee.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/15009210-d910b19420ca1acf.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/15009210-c0bc8e181455e3c8.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/15009210-8d1cca5245e42c2c.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/15009210-3994f834fce8249e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="http://huanglcat.github.io/2019/05/12/vue-cli3-create-project/%22https://upload-images.jianshu.io/upload_images/15009210-ad8a997d3e2cbc70.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/15009210-85da0162f17d13e1.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/15009210-2426598e081fdfc8.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/15009210-754be52952585ffd.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/15009210-9b9ddbd656194fcb.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:updated_time" content="2019-05-12T03:26:22.294Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Emma的博客">
-<meta name="twitter:description" content="桌上有刀，桌下有猫">
+<meta name="twitter:title" content="vue-cli 3.0从零快速创建vue项目原型框架">
+<meta name="twitter:description" content="Vue CLI 是一个基于 Vue.js 进行快速开发的完整系统。下面记录了如何使用Vue CLI 3从零快速创建vue项目原型框架。">
+<meta name="twitter:image" content="https://upload-images.jianshu.io/upload_images/15009210-cb16859221a4e3dc.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
 
 
 
@@ -125,13 +152,13 @@
 
 
 
-  <link rel="canonical" href="http://huanglcat.github.io/archives/2018/03/"/>
+  <link rel="canonical" href="http://huanglcat.github.io/2019/05/12/vue-cli3-create-project/"/>
 
 
 
 
 
-  <title>归档 | Emma的博客</title>
+  <title>vue-cli 3.0从零快速创建vue项目原型框架 | Emma的博客</title>
   
 
 
@@ -150,7 +177,7 @@
     
   
 
-  <div class="container sidebar-position-left page-archive">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -298,74 +325,317 @@
           <div id="content" class="content">
             
 
+  <div id="posts" class="posts-expand">
+    
+
+  
+
   
   
   
-  <div class="post-block archive">
-    <div id="posts" class="posts-collapse">
-      <span class="archive-move-on"></span>
-
-      <span class="archive-page-counter">
-        
-        
-        
-          
-        
-        嗯..! 目前共计 5 篇日志。 继续努力。
-      </span>
-
-      
-
-        
-        
-        
-
-        
-          
-          <div class="collection-title">
-            <h1 class="archive-year" id="archive-year-2018">2018</h1>
-          </div>
-        
-        
-
-        
 
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://huanglcat.github.io/2019/05/12/vue-cli3-create-project/">
 
-      <h2 class="post-title">
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Emma">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/uploads/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Emma的博客">
+    </span>
+
+    
+      <header class="post-header">
+
         
-            <a class="post-title-link" href="/2018/03/25/blog/" itemprop="url">
-              
-                <span itemprop="name">记Github+hexo搭建个人博客</span>
-              
-            </a>
         
-      </h2>
+          <h1 class="post-title" itemprop="name headline">vue-cli 3.0从零快速创建vue项目原型框架</h1>
+        
 
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2018-03-25T14:05:31+08:00"
-              content="2018-03-25" >
-          03-25
-        </time>
-      </div>
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-05-12T10:59:35+08:00">
+                2019-05-12
+              </time>
+            
 
-    </header>
-  </article>
+            
 
+            
+          </span>
 
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Vue/" itemprop="url" rel="index">
+                    <span itemprop="name">Vue</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2019/05/12/vue-cli3-create-project/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2019/05/12/vue-cli3-create-project/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+             <span id="/2019/05/12/vue-cli3-create-project/" class="leancloud_visitors" data-flag-title="vue-cli 3.0从零快速创建vue项目原型框架">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数&#58;</span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计&#58;</span>
+                
+                <span title="字数统计">
+                  1.4k 字
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">
+                  5 分钟
+                </span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
 
       
+      
 
+      
+        <p>Vue CLI 是一个基于 Vue.js 进行快速开发的完整系统。下面记录了如何使用Vue CLI 3从零快速创建vue项目原型框架。<br><a id="more"></a></p>
+<h1 id="环境配置："><a href="#环境配置：" class="headerlink" title="环境配置："></a>环境配置：</h1><p>本机操作系统：window7</p>
+<p>安装<code>node.js</code>和<code>npm</code>：<code>node.js</code>(<code>vue-cli 3.0</code>安装需要nodejs版本大于<code>8.9.0</code>，本机安装的是<code>11.6.0</code>)</p>
+<p>查看本机node.js版本：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">node -v</span><br></pre></td></tr></table></figure></p>
+<p>如果node.js版本低，可以使用一个windows下nodejs的版本管理工具gnvm来更新nodejs版本，可以更新到最新版本，也可以更新到特定版本（文档地址：<a href="http://ksria.com/gnvm/），在本机存在nodejs环境时，下载解压缩获取到gnvm.eve后将其保存到nodejs的安装目录下，执行命令更新到最新版本：" target="_blank" rel="noopener">http://ksria.com/gnvm/），在本机存在nodejs环境时，下载解压缩获取到gnvm.eve后将其保存到nodejs的安装目录下，执行命令更新到最新版本：</a><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">gnvm update latest</span><br></pre></td></tr></table></figure></p>
+<p>本机npm版本6.5.0，查看npm版本命令：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm -v</span><br></pre></td></tr></table></figure></p>
+<p>安装<code>@vue/cli</code> + <code>@vue/cli-service-global</code>：<code>vue-cli3</code>是vue更新的构建工具，降低了使用webpack的难度，支持热更新，有<code>webpack-dev-server</code>支持，搭建了一个测试服务器。（文档地址：<a href="https://cli.vuejs.org/zh/guide/）通过" target="_blank" rel="noopener">https://cli.vuejs.org/zh/guide/）通过</a> @vue/cli + @vue/cli-service-global 可以快速开始零配置原型开发。</p>
+<p>安装命令：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">npm install -g @vue-cli</span><br><span class="line"></span><br><span class="line">npm install -g @vue/cli-service-global</span><br></pre></td></tr></table></figure></p>
+<p>如果已将安装了vue-cli旧版本，需要先卸载就版本，再安装新版本。（官网有说明）<br>安装开发工具Visual Studio Code：Visual Studio Code (简称 VS Code / VSC) 是一款免费开源的现代化轻量级代码编辑器，支持几乎所有主流的开发语言的语法高亮、智能代码补全、自定义快捷键、括号匹配和颜色区分、代码片段、代码对比 Diff、GIT命令 等特性，支持插件扩展，并针对网页开发和云端应用开发做了优化。软件跨平台支持 Win、Mac 以及 Linux。内置Git终端。</p>
+<p>下载地址：<a href="https://code.visualstudio.com/" target="_blank" rel="noopener">https://code.visualstudio.com/</a></p>
+<p>安装成功之后，最好安装一些方便vue开发的插件，在扩展中输入vue，可查询vue相关插件，Vue VSCode Snippets可以提供快速构建代码块命令，安装即可使用快捷命令。</p>
+<p>此时，环境已准备好。</p>
+<h1 id="创建新项目"><a href="#创建新项目" class="headerlink" title="创建新项目"></a>创建新项目</h1><p>可以根据使用习惯选择命令行或者UI界面创建新项目：</p>
+<h2 id="命令行快速创建新项目："><a href="#命令行快速创建新项目：" class="headerlink" title="命令行快速创建新项目："></a>命令行快速创建新项目：</h2><p>在vscode的下面打开终端，输入创建项目命令：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vue create vue-new</span><br></pre></td></tr></table></figure></p>
+<p><img src="https://upload-images.jianshu.io/upload_images/15009210-cb16859221a4e3dc.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"></p>
+<p>可以使用默认配置（只配置babel 和 eslint）也可以使用自定义配置，通过键盘上下键可切换选择，此时选择自定义配置Manually select features 后按空格键选中/反选自定义配置，按a键 全选/全不选：</p>
+<p><img src="https://upload-images.jianshu.io/upload_images/15009210-87c9281e0548fd62.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"></p>
+<p>仍然是通过键盘上下键选择你要的配置，再通过空格键选择配置，配置说明如下：</p>
+<ul>
+<li><p>Bacel：配置Bacel（配置Bacel可以自由的在开发环境使用es6语法，Bacel会将你的es6语句编译为es5语句）</p>
+</li>
+<li><p>TypeScript：配置TypeScript开发环境</p>
+</li>
+<li><p>Progressive Web App (PWA) Support：配置对PWA的支持（PWA全称Progressive Web App，直译是渐进式WEB应用，是 Google 在 2015 年提出，2016年6月才推广的项目）</p>
+</li>
+<li><p>Router：配置vue router</p>
+</li>
+<li><p>Vuex：配置Vuex</p>
+</li>
+<li><p>CSS Pre-processors：配置css预处理类型</p>
+</li>
+<li><p>Linter / Formatter：配置Linter / Formatter规范类型</p>
+</li>
+<li><p>Unit Testing：配置单元测试方式</p>
+</li>
+<li><p>E2E Testing：配置E2E测试方式</p>
+</li>
+</ul>
+<p>这里选择的自定义配置如下：</p>
+<p><img src="https://upload-images.jianshu.io/upload_images/15009210-cb9d683ff7f18243.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"></p>
+<p>选择好回车之后，根据提示输入Y或N ，或者直接回车选择默认配置：</p>
+<p><img src="https://upload-images.jianshu.io/upload_images/15009210-b2700d9775048458.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"></p>
+<p>选好配置回车之后，会提示是否保存为之后创建新工程的默认配置：</p>
+<p><img src="https://upload-images.jianshu.io/upload_images/15009210-5fa76d266acc22d5.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"></p>
+<p>这里直接回车确认，等待命令完成</p>
+<p><img src="https://upload-images.jianshu.io/upload_images/15009210-b56dc99fde4716aa.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"><br>此时已经创建好一个新项目。</p>
+<h2 id="使用图形化界面创建新项目"><a href="#使用图形化界面创建新项目" class="headerlink" title="使用图形化界面创建新项目"></a>使用图形化界面创建新项目</h2><p>如果不喜欢在命令行进行操作，也可以在图形化界面创建新项目，在vscode中打开终端，输入命令：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vue ui</span><br></pre></td></tr></table></figure></p>
+<p><img src="https://upload-images.jianshu.io/upload_images/15009210-15095dcd996cc3f0.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"></p>
+<p>可以看到该命令创建了一个本地服务，打开了一个浏览器，窗口如下：</p>
+<p><img src="https://upload-images.jianshu.io/upload_images/15009210-49b7fe9efb93b6b3.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"></p>
+<p>点击创建新项目：</p>
+<p><img src="https://upload-images.jianshu.io/upload_images/15009210-f37d177eb8857961.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"><br>输入项目名，选择包管理器（npm）之后</p>
+<p><img src="https://upload-images.jianshu.io/upload_images/15009210-b5cc46b86f1fb9ca.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"></p>
+<p>点击下一步，可以看到，同命令行一样的，进行项目配置：</p>
+<p><img src="https://upload-images.jianshu.io/upload_images/15009210-3f5b2d47c835798b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"></p>
+<p>选择手动配置，点击下一步：</p>
+<p><img src="https://upload-images.jianshu.io/upload_images/15009210-59a0ebd1a738cfce.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"></p>
+<p>选择自定义配置后点击下一步：</p>
+<p><img src="https://upload-images.jianshu.io/upload_images/15009210-83a68b703f2e47df.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"></p>
+<p>选择具体配置后，点击创建新项目：</p>
+<p><img src="https://upload-images.jianshu.io/upload_images/15009210-fb3a94bf22649ff4.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"><br>保存配置之后，点击创建，看到loading界面，安装成功后，可以看到一个管理页面：</p>
+<p><img src="https://upload-images.jianshu.io/upload_images/15009210-2b1281d6b5207aee.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"><br>可以在上面管理插件：</p>
+<p><img src="https://upload-images.jianshu.io/upload_images/15009210-d910b19420ca1acf.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"><br>配置依赖：</p>
+<p><img src="https://upload-images.jianshu.io/upload_images/15009210-c0bc8e181455e3c8.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"><br>修改配置：</p>
+<p><img src="https://upload-images.jianshu.io/upload_images/15009210-8d1cca5245e42c2c.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"></p>
+<p>运行和管理任务：</p>
+<p><img src="https://upload-images.jianshu.io/upload_images/15009210-3994f834fce8249e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"><br>点击运行serve命令，可以看到项目的各项配置，资源和依赖项</p>
+<p><img src="&quot;https://upload-images.jianshu.io/upload_images/15009210-ad8a997d3e2cbc70.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"></p>
+<p>点击启动app，可以看到运行起来的页面：</p>
+<p><img src="https://upload-images.jianshu.io/upload_images/15009210-85da0162f17d13e1.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"><br>还可以分析项目的打包情况：</p>
+<p><img src="https://upload-images.jianshu.io/upload_images/15009210-2426598e081fdfc8.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"><br>此时，创建项目成功。</p>
+<h1 id="添加UI库插件"><a href="#添加UI库插件" class="headerlink" title="添加UI库插件"></a>添加UI库插件</h1><p>如果没有特殊的业务需求或者设计展现，可以根据业务特点，选一款UI库，例如如果是移动端，可以选择滴滴团队的UI框架cube-ui，</p>
+<p>输入命令：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vue add cube-ui</span><br></pre></td></tr></table></figure></p>
+<h1 id="项目运行"><a href="#项目运行" class="headerlink" title="项目运行"></a>项目运行</h1><p>此时可以开始进行开发了。打开项目目录，可以看到项目目录如下：</p>
+<p><img src="https://upload-images.jianshu.io/upload_images/15009210-754be52952585ffd.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"></p>
+<p>输入命令运行项目：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm run serve</span><br></pre></td></tr></table></figure></p>
+<p>可以将此命令改成start，</p>
+<p>执行start命令不用输入run：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm start</span><br></pre></td></tr></table></figure></p>
+<p><img src="https://upload-images.jianshu.io/upload_images/15009210-9b9ddbd656194fcb.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"><br>此时，已经创建好一个vue项目原型框架，可以尽情地开始开发啦！</p>
+
+      
     </div>
+    
+    
+    
+
+    
+
+    
+
+    
+      <div>
+        <ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>本文作者：</strong>
+    Emma
+  </li>
+  <li class="post-copyright-link">
+    <strong>本文链接：</strong>
+    <a href="http://huanglcat.github.io/2019/05/12/vue-cli3-create-project/" title="vue-cli 3.0从零快速创建vue项目原型框架">http://huanglcat.github.io/2019/05/12/vue-cli3-create-project/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>版权声明： </strong>
+    本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/" rel="external nofollow" target="_blank">CC BY-NC-SA 3.0</a> 许可协议。转载请注明出处！
+  </li>
+</ul>
+
+      </div>
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/Vue/" rel="tag"># Vue</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2019/05/11/hexo-next/" rel="next" title="Next主题个性化配置">
+                <i class="fa fa-chevron-left"></i> Next主题个性化配置
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
   </div>
   
   
   
+  </article>
 
-  
 
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -373,6 +643,13 @@
 
 
           
+
+  
+    <div class="comments" id="comments">
+    </div>
+  
+
+
 
         </div>
         
@@ -393,8 +670,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -488,6 +774,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#环境配置："><span class="nav-number">1.</span> <span class="nav-text">环境配置：</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#创建新项目"><span class="nav-number">2.</span> <span class="nav-text">创建新项目</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#命令行快速创建新项目："><span class="nav-number">2.1.</span> <span class="nav-text">命令行快速创建新项目：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#使用图形化界面创建新项目"><span class="nav-number">2.2.</span> <span class="nav-text">使用图形化界面创建新项目</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#添加UI库插件"><span class="nav-number">3.</span> <span class="nav-text">添加UI库插件</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#项目运行"><span class="nav-number">4.</span> <span class="nav-text">项目运行</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -637,6 +939,10 @@
   
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
 
   
 
