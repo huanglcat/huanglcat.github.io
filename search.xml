@@ -1,6 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[vue-cli3项目本地mock数据时报404错误]]></title>
+    <url>%2F2019%2F05%2F12%2Fvue-cli3-mock-data%2F</url>
+    <content type="text"><![CDATA[vue-cli3下创建的项目,在vue.config.js中的devServer开发服务器中的前置中间件mock数据，运行报错的处理。 环境： window7、node.js(11.6.0) 项目： vue-cli3下创建的项目，已安装axios，使用自带的webpack-dev-server来mock数据： 在根目录下创建vue.config.js扩展webpack设置： 在vue组件中获取数据： 查看页面发现报404错误，注意两点： mock配置文件中修改之后需要重启服务，否则不会更新； 如果启动服务过程中检测到代码有错误，但是服务仍然启动成功的，需要解决错误直至错误完全解决，否则会影响配置更新。 在命令行中使用ctrl+C终止服务，重新启动npm start 即可。]]></content>
+      <categories>
+        <category>Vue</category>
+      </categories>
+      <tags>
+        <tag>Vue</tag>
+        <tag>vue-cli3</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[记git误删的本地文件找回]]></title>
     <url>%2F2019%2F05%2F12%2Fgit-recover-delete-file%2F</url>
     <content type="text"><![CDATA[如何恢复git误删的本地文件？可以使用git reset命令 推送本地代码到github，执行了以下两步：12git add .git commit -m &quot;update blog&quot; 然后一不小心执行了下面的代码1git checkout hexo hexo是要推送的分支，然后，辛辛苦苦写了半天的本地代码就被覆盖了！！！不急不急，找下git历史：执行命令：1git reflog 找到要恢复id，这里我要恢复到我commit的那一刻，执行命令：1git reset --hard 7fe0ee0 这样，代码就找回来了。]]></content>
