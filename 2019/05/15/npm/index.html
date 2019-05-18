@@ -75,7 +75,7 @@
 
 
 
-  <meta name="keywords" content="Vue," />
+  <meta name="keywords" content="npm," />
 
 
 
@@ -86,43 +86,21 @@
 
 
 
-<meta name="description" content="Vue CLI 是一个基于 Vue.js 进行快速开发的完整系统。下面记录了如何使用Vue CLI 3从零快速创建vue项目原型框架。">
-<meta name="keywords" content="Vue">
+<meta name="description" content="npm是工作过程中很常用的包管理工具，这里记录汇总npm基础知识和命令。">
+<meta name="keywords" content="npm">
 <meta property="og:type" content="article">
-<meta property="og:title" content="vue-cli 3.0从零快速创建vue项目原型框架">
-<meta property="og:url" content="http://huanglcat.github.io/2019/05/12/vue-cli3-create-project/index.html">
+<meta property="og:title" content="npm基础知识和命令总结">
+<meta property="og:url" content="http://huanglcat.github.io/2019/05/15/npm/index.html">
 <meta property="og:site_name" content="Emma的博客">
-<meta property="og:description" content="Vue CLI 是一个基于 Vue.js 进行快速开发的完整系统。下面记录了如何使用Vue CLI 3从零快速创建vue项目原型框架。">
+<meta property="og:description" content="npm是工作过程中很常用的包管理工具，这里记录汇总npm基础知识和命令。">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/15009210-cb16859221a4e3dc.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
-<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/15009210-87c9281e0548fd62.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
-<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/15009210-cb9d683ff7f18243.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
-<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/15009210-b2700d9775048458.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
-<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/15009210-5fa76d266acc22d5.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
-<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/15009210-b56dc99fde4716aa.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
-<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/15009210-15095dcd996cc3f0.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
-<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/15009210-49b7fe9efb93b6b3.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
-<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/15009210-f37d177eb8857961.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
-<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/15009210-b5cc46b86f1fb9ca.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
-<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/15009210-3f5b2d47c835798b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
-<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/15009210-59a0ebd1a738cfce.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
-<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/15009210-83a68b703f2e47df.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
-<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/15009210-fb3a94bf22649ff4.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
-<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/15009210-2b1281d6b5207aee.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
-<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/15009210-d910b19420ca1acf.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
-<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/15009210-c0bc8e181455e3c8.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
-<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/15009210-8d1cca5245e42c2c.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
-<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/15009210-3994f834fce8249e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
-<meta property="og:image" content="http://huanglcat.github.io/2019/05/12/vue-cli3-create-project/%22https://upload-images.jianshu.io/upload_images/15009210-ad8a997d3e2cbc70.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
-<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/15009210-85da0162f17d13e1.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
-<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/15009210-2426598e081fdfc8.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
-<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/15009210-754be52952585ffd.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
-<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/15009210-9b9ddbd656194fcb.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
-<meta property="og:updated_time" content="2019-05-12T04:30:48.765Z">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/15009210-77025bd3552afff9.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/15009210-39b52d3d66dece35.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:updated_time" content="2019-05-18T01:38:22.602Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="vue-cli 3.0从零快速创建vue项目原型框架">
-<meta name="twitter:description" content="Vue CLI 是一个基于 Vue.js 进行快速开发的完整系统。下面记录了如何使用Vue CLI 3从零快速创建vue项目原型框架。">
-<meta name="twitter:image" content="https://upload-images.jianshu.io/upload_images/15009210-cb16859221a4e3dc.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta name="twitter:title" content="npm基础知识和命令总结">
+<meta name="twitter:description" content="npm是工作过程中很常用的包管理工具，这里记录汇总npm基础知识和命令。">
+<meta name="twitter:image" content="https://upload-images.jianshu.io/upload_images/15009210-77025bd3552afff9.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
 
 
 
@@ -152,13 +130,13 @@
 
 
 
-  <link rel="canonical" href="http://huanglcat.github.io/2019/05/12/vue-cli3-create-project/"/>
+  <link rel="canonical" href="http://huanglcat.github.io/2019/05/15/npm/"/>
 
 
 
 
 
-  <title>vue-cli 3.0从零快速创建vue项目原型框架 | Emma的博客</title>
+  <title>npm基础知识和命令总结 | Emma的博客</title>
   
 
 
@@ -339,7 +317,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://huanglcat.github.io/2019/05/12/vue-cli3-create-project/">
+    <link itemprop="mainEntityOfPage" href="http://huanglcat.github.io/2019/05/15/npm/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Emma">
@@ -356,7 +334,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">vue-cli 3.0从零快速创建vue项目原型框架</h1>
+          <h1 class="post-title" itemprop="name headline">npm基础知识和命令总结</h1>
         
 
         <div class="post-meta">
@@ -368,8 +346,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-05-12T10:59:35+08:00">
-                2019-05-12
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-05-15T09:34:46+08:00">
+                2019-05-15
               </time>
             
 
@@ -391,8 +369,8 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Vue/" itemprop="url" rel="index">
-                    <span itemprop="name">Vue</span>
+                  <a href="/categories/npm/" itemprop="url" rel="index">
+                    <span itemprop="name">npm</span>
                   </a>
                 </span>
 
@@ -409,8 +387,8 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/2019/05/12/vue-cli3-create-project/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/2019/05/12/vue-cli3-create-project/" itemprop="commentCount"></span>
+                <a href="/2019/05/15/npm/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2019/05/15/npm/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -418,7 +396,7 @@
 
           
           
-             <span id="/2019/05/12/vue-cli3-create-project/" class="leancloud_visitors" data-flag-title="vue-cli 3.0从零快速创建vue项目原型框架">
+             <span id="/2019/05/15/npm/" class="leancloud_visitors" data-flag-title="npm基础知识和命令总结">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -443,7 +421,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  1.4k 字
+                  2.1k 字
                 </span>
               
 
@@ -459,7 +437,7 @@
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
                 <span title="阅读时长">
-                  5 分钟
+                  8 分钟
                 </span>
               
             </div>
@@ -480,85 +458,85 @@
       
 
       
-        <p>Vue CLI 是一个基于 Vue.js 进行快速开发的完整系统。下面记录了如何使用Vue CLI 3从零快速创建vue项目原型框架。<br><a id="more"></a></p>
-<h1 id="环境配置："><a href="#环境配置：" class="headerlink" title="环境配置："></a>环境配置：</h1><p>本机操作系统：window7</p>
-<p>安装<code>node.js</code>和<code>npm</code>：<code>node.js</code>(<code>vue-cli 3.0</code>安装需要nodejs版本大于<code>8.9.0</code>，本机安装的是<code>11.6.0</code>)</p>
-<p>查看本机node.js版本：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">node -v</span><br></pre></td></tr></table></figure></p>
-<p>如果node.js版本低，可以使用一个windows下nodejs的版本管理工具gnvm来更新nodejs版本，可以更新到最新版本，也可以更新到特定版本（文档地址：<a href="http://ksria.com/gnvm/），在本机存在nodejs环境时，下载解压缩获取到gnvm.eve后将其保存到nodejs的安装目录下，执行命令更新到最新版本：" target="_blank" rel="noopener">http://ksria.com/gnvm/），在本机存在nodejs环境时，下载解压缩获取到gnvm.eve后将其保存到nodejs的安装目录下，执行命令更新到最新版本：</a><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">gnvm update latest</span><br></pre></td></tr></table></figure></p>
-<p>本机npm版本6.5.0，查看npm版本命令：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm -v</span><br></pre></td></tr></table></figure></p>
-<p>安装<code>@vue/cli</code> + <code>@vue/cli-service-global</code>：<code>vue-cli3</code>是vue更新的构建工具，降低了使用webpack的难度，支持热更新，有<code>webpack-dev-server</code>支持，搭建了一个测试服务器。（文档地址：<a href="https://cli.vuejs.org/zh/guide/）通过" target="_blank" rel="noopener">https://cli.vuejs.org/zh/guide/）通过</a> @vue/cli + @vue/cli-service-global 可以快速开始零配置原型开发。</p>
-<p>安装命令：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">npm install -g @vue-cli</span><br><span class="line"></span><br><span class="line">npm install -g @vue/cli-service-global</span><br></pre></td></tr></table></figure></p>
-<p>如果已将安装了vue-cli旧版本，需要先卸载就版本，再安装新版本。（官网有说明）<br>安装开发工具Visual Studio Code：Visual Studio Code (简称 VS Code / VSC) 是一款免费开源的现代化轻量级代码编辑器，支持几乎所有主流的开发语言的语法高亮、智能代码补全、自定义快捷键、括号匹配和颜色区分、代码片段、代码对比 Diff、GIT命令 等特性，支持插件扩展，并针对网页开发和云端应用开发做了优化。软件跨平台支持 Win、Mac 以及 Linux。内置Git终端。</p>
-<p>下载地址：<a href="https://code.visualstudio.com/" target="_blank" rel="noopener">https://code.visualstudio.com/</a></p>
-<p>安装成功之后，最好安装一些方便vue开发的插件，在扩展中输入vue，可查询vue相关插件，Vue VSCode Snippets可以提供快速构建代码块命令，安装即可使用快捷命令。</p>
-<p>此时，环境已准备好。</p>
-<h1 id="创建新项目"><a href="#创建新项目" class="headerlink" title="创建新项目"></a>创建新项目</h1><p>可以根据使用习惯选择命令行或者UI界面创建新项目：</p>
-<h2 id="命令行快速创建新项目："><a href="#命令行快速创建新项目：" class="headerlink" title="命令行快速创建新项目："></a>命令行快速创建新项目：</h2><p>在vscode的下面打开终端，输入创建项目命令：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vue create vue-new</span><br></pre></td></tr></table></figure></p>
-<p><img src="https://upload-images.jianshu.io/upload_images/15009210-cb16859221a4e3dc.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"></p>
-<p>可以使用默认配置（只配置babel 和 eslint）也可以使用自定义配置，通过键盘上下键可切换选择，此时选择自定义配置Manually select features 后按空格键选中/反选自定义配置，按a键 全选/全不选：</p>
-<p><img src="https://upload-images.jianshu.io/upload_images/15009210-87c9281e0548fd62.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"></p>
-<p>仍然是通过键盘上下键选择你要的配置，再通过空格键选择配置，配置说明如下：</p>
+        <p>npm是工作过程中很常用的包管理工具，这里记录汇总npm基础知识和命令。<br><a id="more"></a></p>
+<h1 id="npm是什么？"><a href="#npm是什么？" class="headerlink" title="npm是什么？"></a>npm是什么？</h1><hr>
+<p>npm全称Node Package Manager，是node.js的模块依赖管理工具，它有一个日益强大的对手叫yarn，yarn是Facebook发布的一款依赖管理工具。</p>
+<h2 id="npm的使用场景："><a href="#npm的使用场景：" class="headerlink" title="npm的使用场景："></a>npm的使用场景：</h2><p>上传分享自己写的程序代码（包），下载别人写的程序代码（包）。</p>
+<h2 id="npm的组成："><a href="#npm的组成：" class="headerlink" title="npm的组成："></a>npm的组成：</h2><ul>
+<li>npm官网（<a href="https://www.npmjs.com/），用来管理设置上面的代码程序包" target="_blank" rel="noopener">https://www.npmjs.com/），用来管理设置上面的代码程序包</a></li>
+<li>一个大数据库，大家分享的程序就放在那里</li>
+<li>命令行工具（CLI），我们通过CLI来与npm交流<h1 id="npm怎么安装与升级"><a href="#npm怎么安装与升级" class="headerlink" title="npm怎么安装与升级"></a>npm怎么安装与升级</h1></li>
+</ul>
+<hr>
+<p>与NodeJs一起集成安装，安装NodeJS时安装npm。</p>
+<h2 id="查看npm版本"><a href="#查看npm版本" class="headerlink" title="查看npm版本"></a>查看npm版本</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">npm -v</span><br><span class="line">#6.5.0</span><br></pre></td></tr></table></figure>
+<h2 id="查看帮助"><a href="#查看帮助" class="headerlink" title="查看帮助"></a>查看帮助</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm help &lt;command&gt;</span><br></pre></td></tr></table></figure>
+<h2 id="升级npm"><a href="#升级npm" class="headerlink" title="升级npm"></a>升级npm</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">npm install npm -g</span><br><span class="line">npm install npm@latest -g #升级到最新版本</span><br></pre></td></tr></table></figure>
+<h1 id="包是什么？"><a href="#包是什么？" class="headerlink" title="包是什么？"></a>包是什么？</h1><hr>
+<p>npm的核心是包，npm将它管理的程序都叫包，每个包里有个<code>package.json</code>文件，位于包的根目录下，用于定义包的属性（配置信息），比如包的名称、版本、许可证等等。<br>在进行<code>npm install</code>命令时，就是根据这个配置文件，来自动下载这个包所需的模块，配置项目所需的运行和开发环境。</p>
+<h2 id="package-json"><a href="#package-json" class="headerlink" title="package.json"></a>package.json</h2><p><code>package.json</code>是一个JSON对象，每一个键值对就是当面包的一个配置。<br>一个<code>package.json</code>常用字段:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">	&quot;name&quot;: &quot;Hello World&quot;, //包名</span><br><span class="line">	&quot;version&quot;: &quot;0.0.1&quot;,//包的版本号，主版本.次版本.补丁版本</span><br><span class="line">	&quot;author&quot;: &quot;张三&quot;,//包的作者，格式设置：Your Name &lt;email@example.com&gt; (http://example.com)</span><br><span class="line">	&quot;description&quot;: &quot;第一个node.js程序&quot;,//包的描述</span><br><span class="line">	&quot;keywords&quot;:[&quot;node.js&quot;,&quot;javascript&quot;],//包的关键词</span><br><span class="line">        &quot;main&quot;:&quot;index.js&quot;,//main 字段指定了程序的主入口文件，require(&apos;moduleName&apos;) 就会加载这个文件。这个字段的默认值是模块根目录下面的 index.js。</span><br><span class="line">	&quot;repository&quot;: &#123;// 包代码存放的地方的类型，可以是 git 或 svn，git 可在 Github 上。</span><br><span class="line">		&quot;type&quot;: &quot;git&quot;,</span><br><span class="line">		&quot;url&quot;: &quot;https://path/to/url&quot;</span><br><span class="line">	&#125;,</span><br><span class="line">	&quot;license&quot;:&quot;MIT&quot;,//包的版权协议</span><br><span class="line">	&quot;engines&quot;: &#123;&quot;node&quot;: &quot;0.10.x&quot;&#125;,//该模块运行的平台，比如 Node 的某个版本或者浏览器</span><br><span class="line">	&quot;bugs&quot;:&#123;&quot;url&quot;:&quot;http://path/to/bug&quot;,&quot;email&quot;:&quot;bug@example.com&quot;&#125;,</span><br><span class="line">	&quot;contributors&quot;:[&#123;&quot;name&quot;:&quot;李四&quot;,&quot;email&quot;:&quot;lisi@example.com&quot;&#125;],//包的其他贡献者姓名</span><br><span class="line">	&quot;scripts&quot;: &#123;//运行脚本命令的npm命令行缩写，执行命令：npm run &lt;命令名&gt;</span><br><span class="line">		&quot;start&quot;: &quot;node index.js&quot;</span><br><span class="line">	&#125;,</span><br><span class="line">        &quot;config&quot;:&#123;//添加命令行的环境变量</span><br><span class="line">                &quot;port&quot;:&quot;8080&quot;//可以在js中通过process.env.npm_package_config_port获取，可以通过npm config set &lt;包名&gt;:port 80修改</span><br><span class="line">        &#125;,</span><br><span class="line">        &quot;browser&quot;: &#123;//供浏览器使用的版本</span><br><span class="line">                &quot;tipso&quot;: &quot;./node_modules/tipso/src/tipso.js&quot;</span><br><span class="line">        &#125;,</span><br><span class="line">	&quot;dependencies&quot;: &#123;//项目运行依赖包列表。如果依赖包没有安装，npm 会自动将依赖包安装在 * node_module 目录下</span><br><span class="line">		&quot;express&quot;: &quot;latest&quot;,</span><br><span class="line">		&quot;mongoose&quot;: &quot;~3.8.3&quot;,</span><br><span class="line">		&quot;handlebars-runtime&quot;: &quot;~1.0.12&quot;,</span><br><span class="line">		&quot;express3-handlebars&quot;: &quot;~0.5.0&quot;,</span><br><span class="line">		&quot;MD5&quot;: &quot;~1.2.0&quot;</span><br><span class="line">	&#125;,</span><br><span class="line">	&quot;devDependencies&quot;: &#123;//项目开发依赖包列表</span><br><span class="line">		&quot;bower&quot;: &quot;~1.2.8&quot;,</span><br><span class="line">		&quot;grunt&quot;: &quot;~0.4.1&quot;,</span><br><span class="line">		&quot;grunt-contrib-concat&quot;: &quot;~0.3.0&quot;,</span><br><span class="line">		&quot;grunt-contrib-jshint&quot;: &quot;~0.7.2&quot;,</span><br><span class="line">		&quot;grunt-contrib-uglify&quot;: &quot;~0.2.7&quot;,</span><br><span class="line">		&quot;grunt-contrib-clean&quot;: &quot;~0.5.0&quot;,</span><br><span class="line">		&quot;browserify&quot;: &quot;2.36.1&quot;,</span><br><span class="line">		&quot;grunt-browserify&quot;: &quot;~1.3.0&quot;,</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<h2 id="依赖包版本格式"><a href="#依赖包版本格式" class="headerlink" title="依赖包版本格式:"></a>依赖包版本格式:</h2><ol>
+<li>指定：1.2.2</li>
+<li><code>~</code>+指定：~1.2.2，表示安装1.2.x的最新版本（不低于1.2.2，小于1.3.x）</li>
+<li><code>^</code> + 指定版本：^1.2.2，表示安装1.x.x的最新版本，（不低于1.2.2，小于2.x.x）</li>
+<li>latest：最新版本<br><code>## package.json</code>生成方式：</li>
+<li>手写</li>
+<li>执行<code>npm init</code>生成<h2 id="依赖包写入package-json"><a href="#依赖包写入package-json" class="headerlink" title="依赖包写入package.json"></a>依赖包写入package.json</h2>不在<code>package.json</code>的包要写入，使用–save 或者–save-dev<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">npm install express --save     # 将该模块写入dependencies属性</span><br><span class="line">npm install express --save-dev   #将该模块写入devDependencies属性</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<h1 id="下载安装、卸载、更新包"><a href="#下载安装、卸载、更新包" class="headerlink" title="下载安装、卸载、更新包"></a>下载安装、卸载、更新包</h1><hr>
+<h2 id="安装方式（全局安装与本地安装）"><a href="#安装方式（全局安装与本地安装）" class="headerlink" title="安装方式（全局安装与本地安装）"></a>安装方式（全局安装与本地安装）</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">npm install express          # 本地安装</span><br><span class="line">npm i express              #简写</span><br><span class="line">npm install express -g   # 全局安装</span><br></pre></td></tr></table></figure>
 <ul>
-<li><p>Bacel：配置Bacel（配置Bacel可以自由的在开发环境使用es6语法，Bacel会将你的es6语句编译为es5语句）</p>
-</li>
-<li><p>TypeScript：配置TypeScript开发环境</p>
-</li>
-<li><p>Progressive Web App (PWA) Support：配置对PWA的支持（PWA全称Progressive Web App，直译是渐进式WEB应用，是 Google 在 2015 年提出，2016年6月才推广的项目）</p>
-</li>
-<li><p>Router：配置vue router</p>
-</li>
-<li><p>Vuex：配置Vuex</p>
-</li>
-<li><p>CSS Pre-processors：配置css预处理类型</p>
-</li>
-<li><p>Linter / Formatter：配置Linter / Formatter规范类型</p>
-</li>
-<li><p>Unit Testing：配置单元测试方式</p>
-</li>
-<li><p>E2E Testing：配置E2E测试方式</p>
+<li>全局安装：安装包放在 /usr/local 下或者你 node 的安装目录，可以在命令行直接使用</li>
+<li>本地安装：安装包放在 ./node_modules 下（运行 npm 命令时所在的目录），没有时会自动创建，通过 require() 来引入本地安装的包<h2 id="引用下载的包"><a href="#引用下载的包" class="headerlink" title="引用下载的包"></a>引用下载的包</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">//var &lt;Module Name&gt;= require(&apos;&lt;Module Name&gt;&apos;);</span><br><span class="line">var express = require(&apos;express&apos;);</span><br></pre></td></tr></table></figure>
 </li>
 </ul>
-<p>这里选择的自定义配置如下：</p>
-<p><img src="https://upload-images.jianshu.io/upload_images/15009210-cb9d683ff7f18243.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"></p>
-<p>选择好回车之后，根据提示输入Y或N ，或者直接回车选择默认配置：</p>
-<p><img src="https://upload-images.jianshu.io/upload_images/15009210-b2700d9775048458.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"></p>
-<p>选好配置回车之后，会提示是否保存为之后创建新工程的默认配置：</p>
-<p><img src="https://upload-images.jianshu.io/upload_images/15009210-5fa76d266acc22d5.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"></p>
-<p>这里直接回车确认，等待命令完成</p>
-<p><img src="https://upload-images.jianshu.io/upload_images/15009210-b56dc99fde4716aa.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"><br>此时已经创建好一个新项目。</p>
-<h2 id="使用图形化界面创建新项目"><a href="#使用图形化界面创建新项目" class="headerlink" title="使用图形化界面创建新项目"></a>使用图形化界面创建新项目</h2><p>如果不喜欢在命令行进行操作，也可以在图形化界面创建新项目，在vscode中打开终端，输入命令：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vue ui</span><br></pre></td></tr></table></figure></p>
-<p><img src="https://upload-images.jianshu.io/upload_images/15009210-15095dcd996cc3f0.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"></p>
-<p>可以看到该命令创建了一个本地服务，打开了一个浏览器，窗口如下：</p>
-<p><img src="https://upload-images.jianshu.io/upload_images/15009210-49b7fe9efb93b6b3.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"></p>
-<p>点击创建新项目：</p>
-<p><img src="https://upload-images.jianshu.io/upload_images/15009210-f37d177eb8857961.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"><br>输入项目名，选择包管理器（npm）之后</p>
-<p><img src="https://upload-images.jianshu.io/upload_images/15009210-b5cc46b86f1fb9ca.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"></p>
-<p>点击下一步，可以看到，同命令行一样的，进行项目配置：</p>
-<p><img src="https://upload-images.jianshu.io/upload_images/15009210-3f5b2d47c835798b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"></p>
-<p>选择手动配置，点击下一步：</p>
-<p><img src="https://upload-images.jianshu.io/upload_images/15009210-59a0ebd1a738cfce.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"></p>
-<p>选择自定义配置后点击下一步：</p>
-<p><img src="https://upload-images.jianshu.io/upload_images/15009210-83a68b703f2e47df.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"></p>
-<p>选择具体配置后，点击创建新项目：</p>
-<p><img src="https://upload-images.jianshu.io/upload_images/15009210-fb3a94bf22649ff4.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"><br>保存配置之后，点击创建，看到loading界面，安装成功后，可以看到一个管理页面：</p>
-<p><img src="https://upload-images.jianshu.io/upload_images/15009210-2b1281d6b5207aee.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"><br>可以在上面管理插件：</p>
-<p><img src="https://upload-images.jianshu.io/upload_images/15009210-d910b19420ca1acf.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"><br>配置依赖：</p>
-<p><img src="https://upload-images.jianshu.io/upload_images/15009210-c0bc8e181455e3c8.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"><br>修改配置：</p>
-<p><img src="https://upload-images.jianshu.io/upload_images/15009210-8d1cca5245e42c2c.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"></p>
-<p>运行和管理任务：</p>
-<p><img src="https://upload-images.jianshu.io/upload_images/15009210-3994f834fce8249e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"><br>点击运行serve命令，可以看到项目的各项配置，资源和依赖项</p>
-<p><img src="&quot;https://upload-images.jianshu.io/upload_images/15009210-ad8a997d3e2cbc70.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"></p>
-<p>点击启动app，可以看到运行起来的页面：</p>
-<p><img src="https://upload-images.jianshu.io/upload_images/15009210-85da0162f17d13e1.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"><br>还可以分析项目的打包情况：</p>
-<p><img src="https://upload-images.jianshu.io/upload_images/15009210-2426598e081fdfc8.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"><br>此时，创建项目成功。</p>
-<h1 id="添加UI库插件"><a href="#添加UI库插件" class="headerlink" title="添加UI库插件"></a>添加UI库插件</h1><p>如果没有特殊的业务需求或者设计展现，可以根据业务特点，选一款UI库，例如如果是移动端，可以选择滴滴团队的UI框架cube-ui，</p>
-<p>输入命令：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vue add cube-ui</span><br></pre></td></tr></table></figure></p>
-<h1 id="项目运行"><a href="#项目运行" class="headerlink" title="项目运行"></a>项目运行</h1><p>此时可以开始进行开发了。打开项目目录，可以看到项目目录如下：</p>
-<p><img src="https://upload-images.jianshu.io/upload_images/15009210-754be52952585ffd.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"></p>
-<p>输入命令运行项目：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm run serve</span><br></pre></td></tr></table></figure></p>
-<p>可以将此命令改成start，</p>
-<p>执行start命令不用输入run：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm start</span><br></pre></td></tr></table></figure></p>
-<p><img src="https://upload-images.jianshu.io/upload_images/15009210-9b9ddbd656194fcb.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"><br>此时，已经创建好一个vue项目原型框架，可以尽情地开始开发啦！</p>
+<h2 id="卸载包"><a href="#卸载包" class="headerlink" title="卸载包"></a>卸载包</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">npm uninstall express   #删除node_modules目录下面的包</span><br><span class="line">npm uninstall --save express      #删除node_modules的包和package.json中的运行时依赖</span><br><span class="line">npm uninstall --save-dev express      #删除node_modules的包和package.json中的开发依赖</span><br><span class="line">npm uninstall -g express #全局卸载</span><br></pre></td></tr></table></figure>
+<h2 id="更新包"><a href="#更新包" class="headerlink" title="更新包"></a>更新包</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">npm update express</span><br><span class="line">npm update express -g # 更细全局包</span><br></pre></td></tr></table></figure>
+<h1 id="查询包的信息"><a href="#查询包的信息" class="headerlink" title="查询包的信息"></a>查询包的信息</h1><hr>
+<h2 id="查看安装包信息"><a href="#查看安装包信息" class="headerlink" title="查看安装包信息"></a>查看安装包信息</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">npm list    #查看本地安装包信息</span><br><span class="line">npm list -g  #查看全局安装包信息</span><br><span class="line">npm list express #查看某个安装包信息</span><br><span class="line">npm ls    #npm list简写</span><br></pre></td></tr></table></figure>
+<p><img src="https://upload-images.jianshu.io/upload_images/15009210-77025bd3552afff9.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"></p>
+<h1 id="提升下载包的速度"><a href="#提升下载包的速度" class="headerlink" title="提升下载包的速度"></a>提升下载包的速度</h1><p>由于npm的包大多是在国外数据库，下载速度会受到影响，我们想快一点，可以使用国内的淘宝镜像。<br>淘宝NPM镜像是一个完成的npmjs.org镜像，基本与官网服务一致。</p>
+<h2 id="镜像地址"><a href="#镜像地址" class="headerlink" title="镜像地址"></a>镜像地址</h2><p>淘宝镜像：</p>
+<ul>
+<li>搜索地址：<a href="http://npm.taobao.org/" target="_blank" rel="noopener">http://npm.taobao.org/</a></li>
+<li>registry地址：<a href="http://registry.npm.taobao.org/" target="_blank" rel="noopener">http://registry.npm.taobao.org/</a><br>官网镜像：</li>
+<li>搜索地址：<a href="https://www.npmjs.com/" target="_blank" rel="noopener">https://www.npmjs.com/</a></li>
+<li>registry地址：<a href="https://registry.npmjs.org/" target="_blank" rel="noopener">https://registry.npmjs.org/</a><h2 id="使用淘宝镜像"><a href="#使用淘宝镜像" class="headerlink" title="使用淘宝镜像"></a>使用淘宝镜像</h2><h3 id="临时使用淘宝镜像"><a href="#临时使用淘宝镜像" class="headerlink" title="临时使用淘宝镜像"></a>临时使用淘宝镜像</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">#安装包时临时制定镜像地址</span><br><span class="line">npm --registry https://registry.npm.taobao.org install express</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h3 id="持久使用淘宝镜像"><a href="#持久使用淘宝镜像" class="headerlink" title="持久使用淘宝镜像"></a>持久使用淘宝镜像</h3><p>先配置npm镜像，然后再安装包<br>配置镜像：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">npm config set registry https://registry.npm.taobao.org  #设置成淘宝镜像</span><br><span class="line">npm config set registry https://registry.npmjs.org/    #设置成官网的</span><br></pre></td></tr></table></figure></p>
+<p>监测是否设置成功<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">npm config get registry   #查询镜像地址</span><br><span class="line">npm info express #查询镜像地址</span><br></pre></td></tr></table></figure></p>
+<h3 id="使用cnpm来使用淘宝镜像"><a href="#使用cnpm来使用淘宝镜像" class="headerlink" title="使用cnpm来使用淘宝镜像"></a>使用cnpm来使用淘宝镜像</h3><p>安装cnpm<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install -g cnpm --registry=https://registry.npm.taobao.org</span><br></pre></td></tr></table></figure></p>
+<p>使用cnpm安装包<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cnpm install [name]</span><br></pre></td></tr></table></figure></p>
+<h2 id="使用nrm来管理切换npm源"><a href="#使用nrm来管理切换npm源" class="headerlink" title="使用nrm来管理切换npm源"></a>使用nrm来管理切换npm源</h2><p>nrm专门用来管理和快速切换私人配置的registry。</p>
+<h3 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install -g nrm</span><br></pre></td></tr></table></figure>
+<h3 id="列出可选源"><a href="#列出可选源" class="headerlink" title="列出可选源"></a>列出可选源</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">nrm ls</span><br></pre></td></tr></table></figure>
+<h3 id="切换源"><a href="#切换源" class="headerlink" title="切换源"></a>切换源</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">nrm use taobao</span><br></pre></td></tr></table></figure>
+<h3 id="增加源"><a href="#增加源" class="headerlink" title="增加源"></a>增加源</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">nrm add &lt;源名称&gt; &lt;源地址&gt;   #比如企业或组织有自己的私有源（镜像）时</span><br></pre></td></tr></table></figure>
+<h3 id="删除源"><a href="#删除源" class="headerlink" title="删除源"></a>删除源</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">nrm del</span><br></pre></td></tr></table></figure>
+<h3 id="测试源响应"><a href="#测试源响应" class="headerlink" title="测试源响应"></a>测试源响应</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">nrm test   #测试所有源</span><br><span class="line">nrm test npm  #测试npm官方源</span><br></pre></td></tr></table></figure>
+<p>#如何创建和发布自己的包</p>
+<hr>
+<h2 id="创建模块"><a href="#创建模块" class="headerlink" title="创建模块"></a>创建模块</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm init</span><br></pre></td></tr></table></figure>
+<p><img src="https://upload-images.jianshu.io/upload_images/15009210-39b52d3d66dece35.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"><br>此时，生成了<code>package.json</code>配置文件</p>
+<h2 id="增加入口文件"><a href="#增加入口文件" class="headerlink" title="增加入口文件"></a>增加入口文件</h2><p>默认的入口文件是根目录下的index.js，在根目录下创建index.js<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">//index.js</span><br><span class="line">exports.printMsg = function() &#123;</span><br><span class="line">    console.log(&quot;This is a message from the demo package&quot;);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<h2 id="登录或注册npm账号"><a href="#登录或注册npm账号" class="headerlink" title="登录或注册npm账号"></a>登录或注册npm账号</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">npm adduser  #注册npm账号</span><br><span class="line">npm login #登录npm账号</span><br></pre></td></tr></table></figure>
+<h2 id="发布包"><a href="#发布包" class="headerlink" title="发布包"></a>发布包</h2><p>发布包之前，我们需要做两步：</p>
+<ol>
+<li>修改CHANGE.MD，这里记录了我们包发布的版本变化情况，格式自定</li>
+<li>修改<code>package.json</code>中的<code>version</code>字段，表示这次发布的包的版本，如果不修改，发布会报错。<br>发布包：<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm publish</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<h2 id="撤销发布"><a href="#撤销发布" class="headerlink" title="撤销发布"></a>撤销发布</h2><p>撤销发布自己发布过的某个版本代码<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm unpublish &lt;package&gt;@&lt;version&gt;</span><br></pre></td></tr></table></figure></p>
+<p>发布成功之后，这个包就可以通过<code>npm install</code>命令来进行安装了。</p>
+<h1 id="管理包的版本"><a href="#管理包的版本" class="headerlink" title="管理包的版本"></a>管理包的版本</h1><p>当我们下载和发布我们的包时，都会关注到包的版本号，npm使用语义版本号来管理包。<br>语义版本号组成：X.Y.Z</p>
+<ul>
+<li>X代表主版本号，表示有大变动，向下不兼容</li>
+<li>Y代表次版本号，表示新增功能，向下兼容</li>
+<li>Z代表补丁版本号，表示修复BUG</li>
+</ul>
+<p>参考资料：<br>官网：<a href="https://www.npmjs.com.cn/getting-started/installing-npm-packages-locally/" target="_blank" rel="noopener">https://www.npmjs.com.cn/getting-started/installing-npm-packages-locally/</a><br>菜鸟教程：<a href="https://www.runoob.com/nodejs/nodejs-npm.html" target="_blank" rel="noopener">https://www.runoob.com/nodejs/nodejs-npm.html</a><br>npm脚本使用：<a href="http://www.ruanyifeng.com/blog/2016/10/npm_scripts.html" target="_blank" rel="noopener">http://www.ruanyifeng.com/blog/2016/10/npm_scripts.html</a><br>package.json说明：<a href="http://javascript.ruanyifeng.com/nodejs/packagejson.html" target="_blank" rel="noopener">http://javascript.ruanyifeng.com/nodejs/packagejson.html</a></p>
 
       
     </div>
@@ -579,7 +557,7 @@
   </li>
   <li class="post-copyright-link">
     <strong>本文链接：</strong>
-    <a href="http://huanglcat.github.io/2019/05/12/vue-cli3-create-project/" title="vue-cli 3.0从零快速创建vue项目原型框架">http://huanglcat.github.io/2019/05/12/vue-cli3-create-project/</a>
+    <a href="http://huanglcat.github.io/2019/05/15/npm/" title="npm基础知识和命令总结">http://huanglcat.github.io/2019/05/15/npm/</a>
   </li>
   <li class="post-copyright-license">
     <strong>版权声明： </strong>
@@ -594,7 +572,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/Vue/" rel="tag"># Vue</a>
+            <a href="/tags/npm/" rel="tag"># npm</a>
           
         </div>
       
@@ -607,8 +585,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2019/05/11/hexo-next/" rel="next" title="Next主题个性化配置">
-                <i class="fa fa-chevron-left"></i> Next主题个性化配置
+              <a href="/2019/05/12/vue-cli3-mock-data/" rel="next" title="vue-cli3项目本地mock数据时报404错误">
+                <i class="fa fa-chevron-left"></i> vue-cli3项目本地mock数据时报404错误
               </a>
             
           </div>
@@ -616,10 +594,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2019/05/12/git-recover-delete-file/" rel="prev" title="记git误删的本地文件找回">
-                记git误删的本地文件找回 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -788,7 +762,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#环境配置："><span class="nav-number">1.</span> <span class="nav-text">环境配置：</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#创建新项目"><span class="nav-number">2.</span> <span class="nav-text">创建新项目</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#命令行快速创建新项目："><span class="nav-number">2.1.</span> <span class="nav-text">命令行快速创建新项目：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#使用图形化界面创建新项目"><span class="nav-number">2.2.</span> <span class="nav-text">使用图形化界面创建新项目</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#添加UI库插件"><span class="nav-number">3.</span> <span class="nav-text">添加UI库插件</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#项目运行"><span class="nav-number">4.</span> <span class="nav-text">项目运行</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#npm是什么？"><span class="nav-number">1.</span> <span class="nav-text">npm是什么？</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#npm的使用场景："><span class="nav-number">1.1.</span> <span class="nav-text">npm的使用场景：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#npm的组成："><span class="nav-number">1.2.</span> <span class="nav-text">npm的组成：</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#npm怎么安装与升级"><span class="nav-number">2.</span> <span class="nav-text">npm怎么安装与升级</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#查看npm版本"><span class="nav-number">2.1.</span> <span class="nav-text">查看npm版本</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#查看帮助"><span class="nav-number">2.2.</span> <span class="nav-text">查看帮助</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#升级npm"><span class="nav-number">2.3.</span> <span class="nav-text">升级npm</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#包是什么？"><span class="nav-number">3.</span> <span class="nav-text">包是什么？</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#package-json"><span class="nav-number">3.1.</span> <span class="nav-text">package.json</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#依赖包版本格式"><span class="nav-number">3.2.</span> <span class="nav-text">依赖包版本格式:</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#依赖包写入package-json"><span class="nav-number">3.3.</span> <span class="nav-text">依赖包写入package.json</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#下载安装、卸载、更新包"><span class="nav-number">4.</span> <span class="nav-text">下载安装、卸载、更新包</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#安装方式（全局安装与本地安装）"><span class="nav-number">4.1.</span> <span class="nav-text">安装方式（全局安装与本地安装）</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#引用下载的包"><span class="nav-number">4.2.</span> <span class="nav-text">引用下载的包</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#卸载包"><span class="nav-number">4.3.</span> <span class="nav-text">卸载包</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#更新包"><span class="nav-number">4.4.</span> <span class="nav-text">更新包</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#查询包的信息"><span class="nav-number">5.</span> <span class="nav-text">查询包的信息</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#查看安装包信息"><span class="nav-number">5.1.</span> <span class="nav-text">查看安装包信息</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#提升下载包的速度"><span class="nav-number">6.</span> <span class="nav-text">提升下载包的速度</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#镜像地址"><span class="nav-number">6.1.</span> <span class="nav-text">镜像地址</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#使用淘宝镜像"><span class="nav-number">6.2.</span> <span class="nav-text">使用淘宝镜像</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#临时使用淘宝镜像"><span class="nav-number">6.2.1.</span> <span class="nav-text">临时使用淘宝镜像</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#持久使用淘宝镜像"><span class="nav-number">6.2.2.</span> <span class="nav-text">持久使用淘宝镜像</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#使用cnpm来使用淘宝镜像"><span class="nav-number">6.2.3.</span> <span class="nav-text">使用cnpm来使用淘宝镜像</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#使用nrm来管理切换npm源"><span class="nav-number">6.3.</span> <span class="nav-text">使用nrm来管理切换npm源</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#安装"><span class="nav-number">6.3.1.</span> <span class="nav-text">安装</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#列出可选源"><span class="nav-number">6.3.2.</span> <span class="nav-text">列出可选源</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#切换源"><span class="nav-number">6.3.3.</span> <span class="nav-text">切换源</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#增加源"><span class="nav-number">6.3.4.</span> <span class="nav-text">增加源</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#删除源"><span class="nav-number">6.3.5.</span> <span class="nav-text">删除源</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#测试源响应"><span class="nav-number">6.3.6.</span> <span class="nav-text">测试源响应</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#创建模块"><span class="nav-number">6.4.</span> <span class="nav-text">创建模块</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#增加入口文件"><span class="nav-number">6.5.</span> <span class="nav-text">增加入口文件</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#登录或注册npm账号"><span class="nav-number">6.6.</span> <span class="nav-text">登录或注册npm账号</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#发布包"><span class="nav-number">6.7.</span> <span class="nav-text">发布包</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#撤销发布"><span class="nav-number">6.8.</span> <span class="nav-text">撤销发布</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#管理包的版本"><span class="nav-number">7.</span> <span class="nav-text">管理包的版本</span></a></li></ol></div>
             
 
           </div>
