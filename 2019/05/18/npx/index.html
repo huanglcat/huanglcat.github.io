@@ -97,7 +97,7 @@
 <meta property="og:image" content="https://upload-images.jianshu.io/upload_images/15009210-3b360d8c00b6d9db.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
 <meta property="og:image" content="https://upload-images.jianshu.io/upload_images/15009210-352a9b70d2c491f7.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
 <meta property="og:image" content="https://upload-images.jianshu.io/upload_images/15009210-0c46415adf29b0d2.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
-<meta property="og:updated_time" content="2019-05-18T03:56:01.002Z">
+<meta property="og:updated_time" content="2019-05-18T04:11:03.744Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="npx详细使用">
 <meta name="twitter:description" content="前几天接触到了npx，发现这个命令非常好用，这里总结下npx的使用。">
@@ -500,8 +500,8 @@
 <h1 id="安装和参数说明"><a href="#安装和参数说明" class="headerlink" title="安装和参数说明"></a>安装和参数说明</h1><hr>
 <h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install -g npx</span><br></pre></td></tr></table></figure>
 <h2 id="常用参数"><a href="#常用参数" class="headerlink" title="常用参数"></a>常用参数</h2><h3 id="p-参数"><a href="#p-参数" class="headerlink" title="-p 参数"></a>-p 参数</h3><p>-p参数用于指定 npx 所要安装的模块<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npx -p node@6 node -v</span><br></pre></td></tr></table></figure></p>
-<h2 id="–no-install-参数"><a href="#–no-install-参数" class="headerlink" title="–no-install 参数"></a>–no-install 参数</h2><p>强制使用本地模块，不下载远程模块，如果本地不存在该模块，就会报错。</p>
-<h2 id="–ignore-existing-参数"><a href="#–ignore-existing-参数" class="headerlink" title="–ignore-existing 参数"></a>–ignore-existing 参数</h2><p>忽略本地的同名模块，强制安装使用远程模块</p>
+<h3 id="–no-install-参数"><a href="#–no-install-参数" class="headerlink" title="–no-install 参数"></a>–no-install 参数</h3><p>强制使用本地模块，不下载远程模块，如果本地不存在该模块，就会报错。</p>
+<h3 id="–ignore-existing-参数"><a href="#–ignore-existing-参数" class="headerlink" title="–ignore-existing 参数"></a>–ignore-existing 参数</h3><p>忽略本地的同名模块，强制安装使用远程模块</p>
 <h1 id="使用场景总结"><a href="#使用场景总结" class="headerlink" title="使用场景总结"></a>使用场景总结</h1><h2 id="使用npx执行-本地命令"><a href="#使用npx执行-本地命令" class="headerlink" title="使用npx执行 本地命令"></a>使用npx执行 本地命令</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">npm i -D mocha</span><br><span class="line">npx mocha --version</span><br></pre></td></tr></table></figure>
 <h2 id="使用npx一次性执行命令"><a href="#使用npx一次性执行命令" class="headerlink" title="使用npx一次性执行命令"></a>使用npx一次性执行命令</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npx create-react-app my-react-app</span><br></pre></td></tr></table></figure>
 <h2 id="使用npx切换node版本"><a href="#使用npx切换node版本" class="headerlink" title="使用npx切换node版本"></a>使用npx切换node版本</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npx node@6 -v</span><br></pre></td></tr></table></figure>
@@ -568,6 +568,10 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2019/05/18/git/" rel="prev" title="git命令总结">
+                git命令总结 <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -651,7 +655,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">9</span>
+                  <span class="site-state-item-count">10</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -736,7 +740,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#npx是什么？"><span class="nav-number">1.</span> <span class="nav-text">npx是什么？</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#为什么要使用npx？"><span class="nav-number">2.</span> <span class="nav-text">为什么要使用npx？</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#解决的问题"><span class="nav-number">2.1.</span> <span class="nav-text">解决的问题</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#在命令行执行本地已安装的依赖包命令"><span class="nav-number">2.1.1.</span> <span class="nav-text">在命令行执行本地已安装的依赖包命令</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#不用全局安装，直接在命令行执行一次性命令"><span class="nav-number">2.1.2.</span> <span class="nav-text">不用全局安装，直接在命令行执行一次性命令</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#切换node版本来运行命令"><span class="nav-number">2.1.3.</span> <span class="nav-text">切换node版本来运行命令</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#npx的原理"><span class="nav-number">2.2.</span> <span class="nav-text">npx的原理</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#安装和参数说明"><span class="nav-number">3.</span> <span class="nav-text">安装和参数说明</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#安装"><span class="nav-number">3.1.</span> <span class="nav-text">安装</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#常用参数"><span class="nav-number">3.2.</span> <span class="nav-text">常用参数</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#p-参数"><span class="nav-number">3.2.1.</span> <span class="nav-text">-p 参数</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#–no-install-参数"><span class="nav-number">3.3.</span> <span class="nav-text">–no-install 参数</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#–ignore-existing-参数"><span class="nav-number">3.4.</span> <span class="nav-text">–ignore-existing 参数</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#使用场景总结"><span class="nav-number">4.</span> <span class="nav-text">使用场景总结</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#使用npx执行-本地命令"><span class="nav-number">4.1.</span> <span class="nav-text">使用npx执行 本地命令</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#使用npx一次性执行命令"><span class="nav-number">4.2.</span> <span class="nav-text">使用npx一次性执行命令</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#使用npx切换node版本"><span class="nav-number">4.3.</span> <span class="nav-text">使用npx切换node版本</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#使用npx执行-GitHub-源码"><span class="nav-number">4.4.</span> <span class="nav-text">使用npx执行 GitHub 源码</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#使用npx开启一个静态服务器"><span class="nav-number">4.5.</span> <span class="nav-text">使用npx开启一个静态服务器</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#npx是什么？"><span class="nav-number">1.</span> <span class="nav-text">npx是什么？</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#为什么要使用npx？"><span class="nav-number">2.</span> <span class="nav-text">为什么要使用npx？</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#解决的问题"><span class="nav-number">2.1.</span> <span class="nav-text">解决的问题</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#在命令行执行本地已安装的依赖包命令"><span class="nav-number">2.1.1.</span> <span class="nav-text">在命令行执行本地已安装的依赖包命令</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#不用全局安装，直接在命令行执行一次性命令"><span class="nav-number">2.1.2.</span> <span class="nav-text">不用全局安装，直接在命令行执行一次性命令</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#切换node版本来运行命令"><span class="nav-number">2.1.3.</span> <span class="nav-text">切换node版本来运行命令</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#npx的原理"><span class="nav-number">2.2.</span> <span class="nav-text">npx的原理</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#安装和参数说明"><span class="nav-number">3.</span> <span class="nav-text">安装和参数说明</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#安装"><span class="nav-number">3.1.</span> <span class="nav-text">安装</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#常用参数"><span class="nav-number">3.2.</span> <span class="nav-text">常用参数</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#p-参数"><span class="nav-number">3.2.1.</span> <span class="nav-text">-p 参数</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#–no-install-参数"><span class="nav-number">3.2.2.</span> <span class="nav-text">–no-install 参数</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#–ignore-existing-参数"><span class="nav-number">3.2.3.</span> <span class="nav-text">–ignore-existing 参数</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#使用场景总结"><span class="nav-number">4.</span> <span class="nav-text">使用场景总结</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#使用npx执行-本地命令"><span class="nav-number">4.1.</span> <span class="nav-text">使用npx执行 本地命令</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#使用npx一次性执行命令"><span class="nav-number">4.2.</span> <span class="nav-text">使用npx一次性执行命令</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#使用npx切换node版本"><span class="nav-number">4.3.</span> <span class="nav-text">使用npx切换node版本</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#使用npx执行-GitHub-源码"><span class="nav-number">4.4.</span> <span class="nav-text">使用npx执行 GitHub 源码</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#使用npx开启一个静态服务器"><span class="nav-number">4.5.</span> <span class="nav-text">使用npx开启一个静态服务器</span></a></li></ol></li></ol></div>
             
 
           </div>
@@ -770,7 +774,7 @@
     
       <span class="post-meta-item-text">总字数&#58;</span>
     
-    <span title="总字数">9.4k</span>
+    <span title="总字数">12.9k</span>
   
 </div>
 
